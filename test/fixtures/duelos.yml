@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  pessoa: MyString
   data_inicio: 2012-10-18 16:21:09
   data_fim: 2012-10-18 16:21:09
 
 two:
-  pessoa: MyString
   data_inicio: 2012-10-18 16:21:09
   data_fim: 2012-10-18 16:21:09
