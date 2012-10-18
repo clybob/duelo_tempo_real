@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'curb'
 
 class PessoasControllerTest < ActionController::TestCase
   setup do

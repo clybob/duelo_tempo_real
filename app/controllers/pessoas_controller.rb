@@ -1,4 +1,5 @@
 class PessoasController < ApplicationController
+  # protect_from_forgery :except => :index
   # GET /pessoas
   # GET /pessoas.json
   def index

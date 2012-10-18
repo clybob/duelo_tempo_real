@@ -1,4 +1,5 @@
 class DuelosController < ApplicationController
+
   # GET /duelos
   # GET /duelos.json
   def index
