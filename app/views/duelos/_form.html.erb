@@ -1,0 +1,29 @@
+<%= form_for(@duelo) do |f| %>
+  <% if @duelo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@duelo.errors.count, "error") %> prohibited this duelo from being saved:</h2>
+
+      <ul>
+      <% @duelo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pessoa %><br />
+    <%= f.text_field :pessoa %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inicio %><br />
+    <%= f.datetime_select :data_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :data_fim %><br />
+    <%= f.datetime_select :data_fim %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

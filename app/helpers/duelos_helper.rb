@@ -1,0 +1,2 @@
+module DuelosHelper
+end

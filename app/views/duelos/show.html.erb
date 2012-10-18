@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pessoa:</b>
+  <%= @duelo.pessoa %>
+</p>
+
+<p>
+  <b>Data inicio:</b>
+  <%= @duelo.data_inicio %>
+</p>
+
+<p>
+  <b>Data fim:</b>
+  <%= @duelo.data_fim %>
+</p>
+
+
+<%= link_to 'Edit', edit_duelo_path(@duelo) %> |
+<%= link_to 'Back', duelos_path %>
