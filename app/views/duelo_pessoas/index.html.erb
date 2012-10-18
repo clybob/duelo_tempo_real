@@ -1,0 +1,27 @@
+<h1>Listing duelo_pessoas</h1>
+
+<table>
+  <tr>
+    <th>Duelo</th>
+    <th>Pessoa</th>
+    <th>Votos</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @duelo_pessoas.each do |duelo_pessoa| %>
+  <tr>
+    <td><%= duelo_pessoa.duelo %></td>
+    <td><%= duelo_pessoa.pessoa %></td>
+    <td><%= duelo_pessoa.votos %></td>
+    <td><%= link_to 'Show', duelo_pessoa %></td>
+    <td><%= link_to 'Edit', edit_duelo_pessoa_path(duelo_pessoa) %></td>
+    <td><%= link_to 'Destroy', duelo_pessoa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Duelo pessoa', new_duelo_pessoa_path %>

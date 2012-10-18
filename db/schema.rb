@@ -11,10 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121018192109) do
+ActiveRecord::Schema.define(:version => 20121018201349) do
+
+  create_table "duelo_pessoas", :force => true do |t|
+    t.integer  "duelo_id"
+    t.integer  "pessoa_id"
+    t.integer  "votos"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "duelo_pessoas", ["duelo_id"], :name => "index_duelo_pessoas_on_duelo_id"
+  add_index "duelo_pessoas", ["pessoa_id"], :name => "index_duelo_pessoas_on_pessoa_id"
 
   create_table "duelos", :force => true do |t|
-    t.string   "pessoa"
     t.datetime "data_inicio"
     t.datetime "data_fim"
     t.datetime "created_at",  :null => false
@@ -28,5 +38,15 @@ ActiveRecord::Schema.define(:version => 20121018192109) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "votos", :force => true do |t|
+    t.integer  "duelo_pessoa_id"
+    t.integer  "qtd_voto"
+    t.datetime "data_consolidacao"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "votos", ["duelo_pessoa_id"], :name => "index_votos_on_duelo_pessoa_id"
 
 end

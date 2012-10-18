@@ -1,4 +1,6 @@
 DueloTempoReal::Application.routes.draw do
+  resources :duelo_pessoas
+
   resources :duelos
 
   resources :pessoas

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  duelo_pessoa: 
+  qtd_voto: 1
+  data_consolidacao: 2012-10-18 17:13:49
+
+two:
+  duelo_pessoa: 
+  qtd_voto: 1
+  data_consolidacao: 2012-10-18 17:13:49
