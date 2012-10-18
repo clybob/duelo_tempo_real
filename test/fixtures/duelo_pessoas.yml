@@ -1,11 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  duelo: 
-  pessoa: 
+duelo_anderson_vitor:
+  duelo: duelo_do_seculo
+  pessoa: anderson
+  votos: 2
+
+duelo_vitor_anderson:
+  duelo: duelo_do_seculo
+  pessoa: vitor
   votos: 1
 
-two:
-  duelo: 
-  pessoa: 
+duelo_anderson_minotauro:
+  duelo: duelo_da_decada
+  pessoa: anderson
+  votos: 2
+
+duelo_minotauro_anderson:
+  duelo: duelo_da_decada
+  pessoa: minotauro
   votos: 1

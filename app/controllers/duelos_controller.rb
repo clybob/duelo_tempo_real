@@ -14,11 +14,11 @@ class DuelosController < ApplicationController
   # GET /duelos/1
   # GET /duelos/1.json
   def show
-    @duelo = Duelo.find(params[:id])
+    @duelo_pessoa = DueloPessoa.find(:all, :conditions => {:duelo_id => params[:id]})
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @duelo }
+      format.json { render json: @duelo_pessoa }
     end
   end
 
