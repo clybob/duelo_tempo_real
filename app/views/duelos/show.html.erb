@@ -13,7 +13,7 @@
                 <div class="participante">
                     <img class="imagem-participante" src="<%= duelo_pessoa.pessoa.imagem %>" alt="">
                     <p class="nome-participante"><%= duelo_pessoa.pessoa.nome %></p>
-                    <button class="btn btn-voto">Bom golpe</button>
+                    <button class="btn btn-voto" data-duelo-pessoa="<%= duelo_pessoa.id %>" data-participante-id="<%= duelo_pessoa.pessoa.id %>">Bom golpe</button>
                 </div>
             <% end %>
         </div>
