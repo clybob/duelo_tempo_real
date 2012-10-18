@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
+duelo_do_seculo:
   data_inicio: 2012-10-18 16:21:09
   data_fim: 2012-10-18 16:21:09
 
-two:
+duelo_da_decada:
   data_inicio: 2012-10-18 16:21:09
   data_fim: 2012-10-18 16:21:09
