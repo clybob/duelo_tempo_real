@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  nome: MyString
-  descricao: MyString
-  imagem: MyString
+  nome: Anderson Silva
+  descricao: Spider
+  imagem: http://media.ufc.tv/fighter_images/Anderson_Silva/anderson_head_153.png
 
 two:
-  nome: MyString
-  descricao: MyString
-  imagem: MyString
+  nome: Vitor Belfort
+  descricao: Phenom
+  imagem: http://media.ufc.tv/fighter_images/Vitor_Belfort/VitorBelfort_Headshot152.png
