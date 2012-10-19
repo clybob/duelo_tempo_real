@@ -3,14 +3,58 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .widget-duelo-tempo-real {
-    .titulo-duelo {
+    background: url('/assets/pontilhado.png') 0 0 repeat transparent;
+
+    .container-widget {
+        margin: 10px;
+        background-color: #fff;
         text-align: center;
+        padding-bottom: 20px;
+
+        .titulo-duelo {
+            background-color: #fff;
+            display: inline;
+            position: relative;
+            top: -20px;
+            text-transform: uppercase;
+        }
     }
 
     .container-participantes {
+        overflow: hidden;
+        padding: 0 18px;
+
         .participante {
             float: left;
             text-align: center;
+        }
+
+        .participante:first-child {
+            margin-right: 23px;
+        }
+
+        .participante-1 {
+            .btn-voto {
+                background-color: #4b0c0b;
+            }
+        }
+
+        .imagem-participante {
+            width: 150px;
+        }
+
+        .nome-participante {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .btn-voto {
+            width: 100%;
+            height: 40px;
+            background-color: #ba130c;
+            color: #fff;
+            text-shadow: none;
         }
     }
 }

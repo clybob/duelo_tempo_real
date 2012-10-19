@@ -1,0 +1,46 @@
+@import "bootstrap";
+
+.btn {
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    border: none;
+    border: 1px solid #ccc\9;
+    background-color: #fff;
+    *background-color: #ededed;
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    transition: none;
+    -webkit-box-shadow: inset 0 0 15px 2px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 0 15px 2px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.05);
+
+    &:hover {
+        background-position: 0 0;
+        background-color: #fff;
+        *background-color: #fff;
+        background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.035));
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.035));
+        background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.035));
+        background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.035));
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.035));
+    }
+
+    &:active, &.selecionado {
+        background-color: #f9f9f9;
+        *background-color: #f9f9f9;
+        background-image: -ms-linear-gradient(top, rgba(0,0,0,.07), rgba(0,0,0,0));
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,.07), rgba(0,0,0,0));
+        background-image: -o-linear-gradient(top, rgba(0,0,0,.07), rgba(0,0,0,0));
+        background-image: linear-gradient(top, rgba(0,0,0,.07), rgba(0,0,0,0));
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,.07), rgba(0,0,0,0));
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), inset 0 2px 3px rgba(0,0,0,.075);
+    }
+}

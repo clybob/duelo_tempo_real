@@ -1,25 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<div class="widget-duelo-tempo-real">
-    <div class="container">
-        <h3 class="titulo-duelo">Vote em quem você acha que esta ganhando a luta</h3>
+<div class="container">
+    <div class="row">
+        <div class="widget-duelo-tempo-real span5">
+            <div class="container-widget">
+                <h3 class="titulo-duelo">Quem está melhor agora</h3>
 
-        <div class="container-barra-andamento">
-            
-        </div>
-
-        <div class="container-participantes">
-            <% @duelo_pessoa.each do |duelo_pessoa| %>
-                <div class="participante">
-                    <img class="imagem-participante" src="<%= duelo_pessoa.pessoa.imagem %>" alt="">
-                    <p class="nome-participante"><%= duelo_pessoa.pessoa.nome %></p>
-                    <button class="btn btn-voto" data-duelo-id="<%= duelo_pessoa.duelo.id %>" data-duelo-pessoa-id="<%= duelo_pessoa.id %>" data-participante-id="<%= duelo_pessoa.pessoa.id %>">Bom golpe</button>
+                <div class="container-barra-andamento">
+                    
                 </div>
-            <% end %>
-        </div>
 
-        <div class="container-historico">
-            
+                <div class="container-participantes">
+                    <% @duelo_pessoa.each_with_index do |duelo_pessoa, index|%>
+                        <div class="participante participante-<%= index %>">
+                            <img class="imagem-participante" src="<%= duelo_pessoa.pessoa.imagem %>" alt="">
+                            <p class="nome-participante"><%= duelo_pessoa.pessoa.nome %></p>
+                            <button class="btn btn-voto" data-duelo-id="<%= duelo_pessoa.duelo.id %>" data-duelo-pessoa-id="<%= duelo_pessoa.id %>" data-participante-id="<%= duelo_pessoa.pessoa.id %>">Bom golpe</button>
+                        </div>
+                    <% end %>
+                </div>
+
+                <div class="container-historico">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </div>
