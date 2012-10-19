@@ -4,15 +4,14 @@
 $(document).ready(function(){
     $('.btn-voto').on('click', function() {
         var dueloPessoaId = $(this).attr('data-duelo-pessoa-id');
-        var url = '/duelo_pessoas/' + dueloPessoaId;
+        var url = '/duelo_pessoas/' + dueloPessoaId + '/salva_redis_voto/';
         var dueloId = $(this).attr('data-duelo-id');
         var participanteId = $(this).attr('data-participante-id');
         var dados = {
-            "duelo": dueloId,
-            "pessoa": participanteId,
-            "votos": "+1"
+            "id_duelo": dueloId,
+            "id_pessoa": participanteId
         };
-        
+
         $.post(url, dados);
     });
 });
