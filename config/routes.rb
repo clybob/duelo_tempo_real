@@ -4,6 +4,9 @@ DueloTempoReal::Application.routes.draw do
   resources :duelos
 
   resources :pessoas
+  
+  match 'duelo_pessoas/:duelo_id/salva_redis_voto' => 'duelo_pessoas#salva_redis_voto', via: [:get]
+  match '/consolida_votos/:duelo_id' => 'duelo_pessoas#consolida_votos', via: [:get]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

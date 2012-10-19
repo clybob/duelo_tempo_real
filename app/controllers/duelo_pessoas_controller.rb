@@ -1,4 +1,17 @@
 class DueloPessoasController < ApplicationController
+
+  def salva_redis_voto
+    duelo_pessoa = DueloPessoa.find(params[:duelo_id])
+    duelo_id = duelo_pessoa.duelo_id
+    pessoa_id = duelo_pessoa.pessoa.id
+    @voto = Voto.salva_no_redis(duelo_id, pessoa_id)
+  end
+  
+  def consolida_votos
+    duelo_id = params[:duelo_id]
+    Voto.consolida_votos(duelo_id)
+  end
+
   # GET /duelo_pessoas
   # GET /duelo_pessoas.json
   def index
